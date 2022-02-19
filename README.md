@@ -6,7 +6,7 @@
 
 #### 什么是ElasticSearch？
 
-首推官网的解释： https://www.elastic.co/guide/en/elasticsearch/reference/7.11/elasticsearch-intro.html。
+首推官网的解释： https://www.elastic.co/guide/en/elasticsearch/reference/7.11/elasticsearch-intro.html
 
 我简单总结下，ES（ElasticSearch的缩写，下文大写的ES都表示ElasticSearch）是一个分布式的搜索和分析引擎，可以通过Logstash、Beats收集数据，并将其存储在ES中。然后通过Kibana可视化的展示、分析你存储的数据。上述就著名的ELK三件套，当然L不是必需的，数据也可以自己写入。
 
@@ -33,7 +33,7 @@ ES使用的是一种被称为倒排索引的数据结构，倒排索引会列出
 
 Kibana是一个基于Node.js的可视化工具，可以利用ES的聚合功能，生成柱状图、饼图、折线图等各类图标。而且还提供了操作ES的控制台（Dev Tools），可以直接在控制台中输入RESTful API来操作ES,并且提供了一定的API提示和语法高亮，有助于我们对ES API的学习。
 
-Kibana没有太多复杂的概念，我们只要会用即可。最后整合ELK时，我会介绍一些基本的用法。也可以看看官方文档，里面还有视频教程：https://www.elastic.co/guide/en/kibana/7.11/introduction.html。
+Kibana没有太多复杂的概念，我们只要会用即可。最后整合ELK时，我会介绍一些基本的用法。也可以看看官方文档，里面还有视频教程：https://www.elastic.co/guide/en/kibana/7.11/introduction.html
 
 ### Logstash
 
@@ -95,7 +95,7 @@ mv elasticsearch-7.11.0 /usr/elasticsearch/
 vim /usr/elasticsearch/elasticsearch-7.11.0/config/elasticsearch.yml
 ```
 
-单机启动只需简单修改如下几项配置即可。如果是运维的朋友，可以去官方文档了解更多的配置信息：https://www.elastic.co/guide/en/elasticsearch/reference/7.11/settings.html. 根据右侧目录可以快速找到自己想看的配置主题，比如Network settings。
+单机启动只需简单修改如下几项配置即可。如果是运维的朋友，可以去官方文档了解更多的配置信息：https://www.elastic.co/guide/en/elasticsearch/reference/7.11/settings.html 根据右侧目录可以快速找到自己想看的配置主题，比如Network settings。
 
 ```shell
 node.name: node-1
