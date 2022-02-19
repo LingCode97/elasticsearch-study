@@ -298,7 +298,7 @@ output {
                      
 ```
 
-在启动Logstash前我们先往/usr/log/目录中放些数据，数据集我是在网上找的，地址：https://grouplens.org/datasets/movielens/。 大家可以根据自己的网速、硬盘大小下载，网速慢的就下个小点的数据集。然后复制到/usr/log/目录下即可。
+在启动Logstash前我们先往/usr/log/目录中放些数据，数据集我是在网上找的，地址：https://grouplens.org/datasets/movielens/  大家可以根据自己的网速、硬盘大小下载，网速慢的就下个小点的数据集。然后复制到/usr/log/目录下即可。
 
 ```shell
 # 下载测试的数据集
