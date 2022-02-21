@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="myConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{MM-dd HH:mm:ss,SSS} %-5p] [%t] %c - %m%n%ex" />
+        </Console>
+
+        <RollingFile name="activexAppender" fileName="/opt/java/log/elasticsearch-study/all.log" filePattern="/opt/java/log/elasticsearch-study/all.%d{yyyy-MM-dd-HH}.log">
+            <PatternLayout>
+                <Pattern>[%d{MM-dd HH:mm:ss SSS} %-5level] [%t] %c{3}[%X{__traceId}] - %m%n%ex</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="myConsole" />
+            <AppenderRef ref="activexAppender" />
+        </Root>
+    </Loggers>
+
+</Configuration>
