@@ -297,12 +297,7 @@ output {
 }
                      
 ```
-上述配置文件中，我简单说说它们的意思。其中input、filter和output就是Logstash管道的三个组件。组件里面的file、csv、mutate、elasticsearch等，是各自组件的插件，它们有不同的功能。比如file插件就是读取文件，而filter里面的mutate插件可以对数据进行常规的操作，比如重命名、删除、修改等。具体的插件用法和解释可见如下链接：
 
-- Input Plugins:https://www.elastic.co/guide/en/logstash/7.11/input-plugins.html
-- Filter Plugins:https://www.elastic.co/guide/en/logstash/7.11/filter-plugins.html
-
-- Output Plugins:https://www.elastic.co/guide/en/logstash/7.11/output-plugins.html
 在启动Logstash前我们先往/usr/log/目录中放些数据，数据集我是在网上找的，地址：https://grouplens.org/datasets/movielens/  大家可以根据自己的网速、硬盘大小下载，网速慢的就下个小点的数据集。然后复制到/usr/log/目录下即可。
 
 ```shell
