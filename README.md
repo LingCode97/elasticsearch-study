@@ -336,7 +336,20 @@ cp movies.csv /usr/log/
 
 ## SpringBoot整合ELK
 
+- 打印日志，Logstash收集日志
+- 应用主动向ES写数据
 
+- Logstash消费kafka
+
+应用的整体流程如下图：
+
+![img](./image/springboot.png)
+
+
+
+为了初期学习方便理解，SpringBoot整合ELK时没有使用SpringBoot的自动配置，也没用使用SpringData ElasticSearch提供的各种便捷功能。代码中采用的是ES官方提供的Java高级客户端进行手动初始化。熟悉了ES官方客户端的基本使用后，再可以去Spring官网了解下SpringData ElasticSearch，其中提供了类似JPA的注解，不用我们手动写mapping，非常方便。
+
+具体实现见代码，必要的地方都有注释。
 
 
 
