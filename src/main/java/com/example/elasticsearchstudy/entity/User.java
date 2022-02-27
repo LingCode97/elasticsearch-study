@@ -12,9 +12,10 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)
 public class User {
-    private String uuid;
+    private Long id;
+    private String traceId;
     private String name;
-    private Date birthday;
+    private String birthday;
     private String job;
     private String address;
     private String company;

@@ -1,2 +1,6 @@
 logging:
   config: src/main/resources/log4j2.xml
+
+elasticsearch:
+  host: 101.35.198.225
+  port: 9200

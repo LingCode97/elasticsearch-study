@@ -15,9 +15,10 @@ public class GenerateUserUtil {
 
     public static User generate(){
         return new User()
-                .setUuid(UUID.randomUUID().toString())
+                .setId(System.currentTimeMillis())
+                .setTraceId(UUID.randomUUID().toString())
                 .setName(faker.name().name())
-                .setBirthday(faker.date().birthday(18,60))
+                .setBirthday(DateFormat.format(faker.date().birthday(18,60)))
                 .setJob(faker.job().title())
                 .setAddress(faker.address().fullAddress())
                 .setCompany(faker.company().name());
